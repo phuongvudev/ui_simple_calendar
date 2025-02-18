@@ -1,7 +1,7 @@
 name: ui_simple_calendar
-description: "A new Flutter project."
+description: "A simple Flutter package for displaying a calendar."
 version: 0.0.1
-homepage:
+homepage: https://github.com/phuongvudev/ui_simple_calendar
 
 environment:
   sdk: ^3.5.4
