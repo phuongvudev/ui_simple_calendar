@@ -1,4 +1,4 @@
-# ui_simple_calendar
+# UI Simple Calendar
 
 A simple Flutter package for displaying a calendar.
 
