@@ -9,8 +9,8 @@ typedef DCalendarWeekdayBuilder = Widget Function(
 /// [isSelected] is true if the day is selected.
 /// [isCurrentMonth] is true if the day is in the current month.
 /// [isToday] is true if the day is today.
-typedef DCalendarDayBuilder = Widget Function(
-    BuildContext context, DateTime day, bool isSelected, bool isCurrentMonth, bool isToday);
+typedef DCalendarDayBuilder = Widget Function(BuildContext context,
+    DateTime day, bool isSelected, bool isCurrentMonth, bool isToday);
 
 /// [month] is the month to be built.
 /// The month is the first day of the month.

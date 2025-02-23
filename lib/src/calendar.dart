@@ -4,22 +4,31 @@ import 'package:ui_simple_calendar/src/builders/calendar_builder.dart';
 import 'package:ui_simple_calendar/src/controller/calendar_controller.dart';
 
 class UISimpleCalendar extends StatefulWidget {
+  /// The initial date to be selected. Default is [DateTime.now()].
   final DateTime? initialDate;
 
+  /// Callback when a date is selected.
   final ValueChanged<DateTime>? onDateSelected;
 
+  /// Builder for the week days.
   final DCalendarWeekdayBuilder? weekdayBuilder;
 
+  /// Builder for the days.
   final DCalendarDayBuilder? dayBuilder;
 
+  /// Builder for the header.
   final DCalendarHeaderBuilder? headerBuilder;
 
+  /// The first date to be selected. Default is null.
   final DateTime? firstDate;
 
+  /// The last date to be selected. Default is null.
   final DateTime? lastDate;
 
+  /// Callback to validate if a date is selectable.
   final DCalendarOnSelectDatePredictable? onSelectDatePredictable;
 
+  /// The controller for the calendar.
   final UISimpleCalendarController controller;
 
   const UISimpleCalendar({
@@ -249,7 +258,8 @@ class _UISimpleCalendarState extends State<UISimpleCalendar> {
     var backgroundColor = Colors.transparent;
 
     if (status == WidgetState.disabled) {
-      textColor = Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.3);
+      textColor =
+          Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.3);
     } else if (status == WidgetState.selected) {
       textColor = Theme.of(context).colorScheme.onPrimary;
     }

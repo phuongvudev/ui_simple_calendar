@@ -8,6 +8,10 @@ A simple Flutter package for displaying a calendar.
 - Navigate between months
 - Select dates
 
+## Screenshots
+
+![Screenshot 1](/assets/screenshots/screenshot_1.png)
+
 ## Getting started
 
 To use this package, add `ui_simple_calendar` as a dependency in your `pubspec.yaml` file.
@@ -35,7 +39,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Simple Calendar'),
         ),
-        body: SimpleCalendar(),
+        body: UISimpleCalendar(controller: controller),
       ),
     );
   }
